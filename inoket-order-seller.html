@@ -150,7 +150,7 @@
 
             <!-- Visually Hidden Preheader Text : BEGIN -->
             <div style="display:none;font-size:1px;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;mso-hide:all;font-family: 'Muli', Arial, sans-serif;">
-                (Optional) This text will appear in the inbox preview, but not the email body.
+                Order Received
             </div>
             <!-- Visually Hidden Preheader Text : END -->
 
@@ -171,7 +171,7 @@
                 <!-- 1 Column Text : BEGIN -->
                 <tr>
                     <td style="padding: 40px; text-align: left; font-family: 'Muli', Arial, sans-serif; font-size: 18px; mso-height-rule: exactly; line-height: 28px; color: #2F313A;">
-                        Hi Name, <br><br>
+                        Hi {{ supplier.name }}, <br><br>
 
                         You have received an order from. Please contact the buyer as soon as possible.
 
@@ -212,7 +212,7 @@
 
                                         <tr>
                                             <td style="font-family: 'Muli', Arial, sans-serif; font-size: 16px; mso-height-rule: exactly; line-height: 28px; color: #2F313A; padding: 0 10px 10px; text-align: left;" class="center-on-narrow">
-                                                email@domain.com
+                                                {{ buyer.email }}
                                             </td>
                                         </tr>
                                     </table>
@@ -248,7 +248,7 @@
 
                                         <tr>
                                             <td style="font-family: 'Muli', Arial, sans-serif; font-size: 16px; mso-height-rule: exactly; line-height: 28px; color: #2F313A; padding: 0 10px 10px; text-align: left;" class="center-on-narrow">
-                                                Service Name
+                                                {{ service.name }}
                                             </td>
                                         </tr>
                                     </table>
@@ -284,7 +284,7 @@
 
                                         <tr>
                                             <td style="font-family: 'Muli', Arial, sans-serif; font-size: 16px; mso-height-rule: exactly; line-height: 28px; color: #2F313A; padding: 0 10px 10px; text-align: left;" class="center-on-narrow">
-                                                00000000000000
+                                                {{ service.id }}
                                             </td>
                                         </tr>
                                     </table>
@@ -320,7 +320,7 @@
 
                                         <tr>
                                             <td style="font-family: 'Muli', Arial, sans-serif; font-size: 16px; mso-height-rule: exactly; line-height: 28px; color: #2F313A; padding: 0 10px 10px; text-align: left;" class="center-on-narrow">
-                                                0000000000
+                                                {{ purchase_order_number }}
                                             </td>
                                         </tr>
                                     </table>
@@ -356,7 +356,7 @@
 
                                         <tr>
                                             <td style="font-family: 'Muli', Arial, sans-serif; font-size: 16px; mso-height-rule: exactly; line-height: 28px; color: #2F313A; padding: 0 10px 10px; text-align: left;" class="center-on-narrow">
-                                                14/06/2016
+                                                {{ date }}
                                             </td>
                                         </tr>
                                     </table>
@@ -395,7 +395,7 @@
 
                                         <tr>
                                             <td style="font-family: 'Muli', Arial, sans-serif; font-size: 18px; mso-height-rule: exactly; line-height: 28px; color: #2F313A; padding: 0 10px 10px; text-align: left;" class="center-on-narrow">
-                                                Total Amount: <span>£0</span>
+                                                Total Amount: <span>£ {{ amount }}</span>
                                             </td>
                                         </tr>
                                     </table>
