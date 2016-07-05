@@ -1,0 +1,5 @@
+inoket-email-templates/__init__.py
+inoket_email_templates.egg-info/PKG-INFO
+inoket_email_templates.egg-info/SOURCES.txt
+inoket_email_templates.egg-info/dependency_links.txt
+inoket_email_templates.egg-info/top_level.txt

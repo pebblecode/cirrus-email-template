@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: inoket-email-templates
+Version: 1.0.0
+Summary: Email Templates for Inoket
+Home-page: UNKNOWN
+Author: pebble {code}
+Author-email: UNKNOWN
+License: MIT
+Description: = Inoket Email Templates
+        Martin Schinz <martin@pebblecode.com>
+        v1.0, 2016-07-05
+        
+        Provides email templates to be used in the inoket platform.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: HTML
